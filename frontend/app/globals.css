@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-darkest: #0a0e1a;
+  --bg-dark: #0f1629;
+  --bg-sidebar: #0d1526;
+  --bg-card: #1a2035;
+  --border: #1e2a3e;
+  --border2: #243048;
+  --accent-blue: #3b82f6;
+  --accent-red: #ef4444;
+  --accent-green: #22c55e;
+  --accent-yellow: #f59e0b;
+  --accent-purple: #8b5cf6;
+  --txt-primary: #e2e8f0;
+  --txt-secondary: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--bg-darkest);
+  color: var(--txt-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+
+/* Range input styling */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  background: var(--border2);
+  height: 4px;
+  border-radius: 2px;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--accent-blue);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+/* Checkbox styling */
+input[type='checkbox'] {
+  accent-color: var(--accent-blue);
+}
+
+/* Select styling */
+select {
+  background-color: var(--bg-card);
+  color: var(--txt-primary);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+/* Input styling */
+input[type='date'],
+input[type='text'] {
+  background-color: var(--bg-card);
+  color: var(--txt-primary);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+/* Recharts tooltip */
+.recharts-tooltip-wrapper {
+  outline: none;
+}
