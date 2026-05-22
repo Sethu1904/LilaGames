@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 # ── paths ────────────────────────────────────────────────────────────────────
 DATA_ROOT = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "..", "player_data"
+    "player_data"
 )
 DATA_ROOT = os.path.normpath(DATA_ROOT)
 
