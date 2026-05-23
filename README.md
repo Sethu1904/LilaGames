@@ -38,16 +38,13 @@ cd LilaGames
 
 ### Step 2 — Add the player_data folder
 
-> ⚠️ The `player_data/` folder is **not included** in the repo (too large for git).
-> You must copy it manually into the project root.
-
 After cloning, your folder structure should look like this:
 
 ```
 LilaGames/
 ├── backend/
 ├── frontend/
-├── player_data/          ← copy this folder here manually
+├── player_data/          
 │   ├── February_10/
 │   ├── February_11/
 │   ├── February_12/
