@@ -32,8 +32,8 @@ npm --version
 ### Step 1 — Clone the repo
 
 ```bash
-git clone https://github.com/Sethu1904/lila-black-visualizer.git
-cd lila-black-visualizer
+git clone https://github.com/Sethu1904/LilaGames.git
+cd LilaGames
 ```
 
 ### Step 2 — Add the player_data folder
@@ -44,7 +44,7 @@ cd lila-black-visualizer
 After cloning, your folder structure should look like this:
 
 ```
-lila-black-visualizer/
+LilaGames/
 ├── backend/
 ├── frontend/
 ├── player_data/          ← copy this folder here manually
@@ -174,7 +174,7 @@ Once the backend is running, all endpoints are available at `http://localhost:80
 ## Project Structure
 
 ```
-lila-black-visualizer/
+LilaGames/
 ├── backend/
 │   ├── main.py            # FastAPI app + all API endpoints
 │   ├── data_loader.py     # Parquet loader, runs in background thread
