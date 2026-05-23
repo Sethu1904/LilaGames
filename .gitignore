@@ -32,5 +32,3 @@ Thumbs.db
 *.swp
 *.swo
 
-# Data files (too large for git)
-player_data/
